@@ -28,7 +28,6 @@ var circle3 = {
 function setup() {
 	createCanvas(400, 400);
 	colorMode(HSB);
-	keyPressed();
 }
 
 function draw() {
@@ -43,18 +42,6 @@ function draw() {
 	resetY(circle);
 	resetY(circle2);
 	resetY(circle3);
-}
-
-function keyPressed() {
-  if (keyCode === UP_ARROW) {
-    circle.vy -= 5;
-		circle2.vy -= 5;
-		circle3.vy -= 5;
-  } else if (keyCode === DOWN_ARROW) {
-    circle.vy += 5;
-		circle2.vy += 5;
-		circle3.vy += 5;
-  }
 }
 
 function paint(circle) {
