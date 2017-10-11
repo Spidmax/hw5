@@ -15,5 +15,5 @@ function draw() {
 }
 
 function mousePressed() {
-	shade[shade.length] = mouseY;
+	shade.push(mouseY);
 }
